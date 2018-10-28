@@ -56,20 +56,11 @@ class Business extends Component {
           </CardSection>
 
           <CardSection>
-            <View style={ReviewViewStyle}>
-              <Text> write review: </Text>
-              <View style={{ paddingTop: 5 }}>
-
-                  <TextInput
-                    multiline={true}
-                    numberOfLines={4}
-                    placeHolder="Message"
-                    backgroundColor="white"
-                    style={{ height: 100, width: 350 }}
-                    />
-
-              </View>
-            </View>
+            <TouchableOpacity
+              style={buttonStyle}
+              >
+              <Text style={textStyle}> press here to write a Review </Text>
+            </TouchableOpacity>
           </CardSection>
 
           <CardSection>

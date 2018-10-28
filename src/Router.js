@@ -18,9 +18,9 @@ import Register from './components/Register';
       <Scene key='root' hideNavBar>
 
      <Scene key='Auth'>
-       <Scene key='MainP' component={MainPage} title='الصفحة الرئيسية' />
-       <Scene key='Login' component={LoginForm} title='تسجيل الدخول' />
-       <Scene key='Register' component={Register} title='التسجيل' />
+       <Scene key='MainP' component={MainPage}  title='الصفحة الرئيسية' />
+       <Scene key='Login' component={LoginForm} backTitle="رجوع"  title='تسجيل الدخول' />
+       <Scene key='Register' component={Register} backTitle="رجوع" title='التسجيل' />
       </Scene>
 
       <Scene key='Main'>
