@@ -5,6 +5,10 @@ import { CardSection, Card, Button, Section, TextInputt, Spinner } from './commo
 import { emailChanged, passwordChanged, loginUser } from '../actions';
 
 class LoginForm extends Component {
+	er(){
+		if(this.props.error !== '')
+		return ('wrong email or password ');
+	}
 	onEmailChange(text) {
 	    this.props.emailChanged(text);
 	  }
@@ -54,7 +58,7 @@ class LoginForm extends Component {
 	        </Section>
 
 	        <Text style={styles.errorTextStyle}>
-	          {this.props.error}
+	          {this.er()}
 	        </Text>
 
 	        <Section>
